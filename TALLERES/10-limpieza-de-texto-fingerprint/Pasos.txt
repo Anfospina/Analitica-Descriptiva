@@ -1,0 +1,20 @@
+Una tarea tipica que se tiene en este tipo de sistemas es limpieza de cadenas de texto. Mal escritas, mayusculas y minusculas mezcladas, signos de puntuacion, retornos de carro.
+
+En una cadena de texto, se deben agrupar lo que sea similar, no es correcto dejar algo que conduce a lo mismo porque en algoritmos de machine learning por ejemplo, se interpreta de distinta manera.
+
+El problema es como lograr cadenas de texto que difieren en el plural y el singular? o que contienen variación de la misma palabra
+
+Google refine es una buena herramienta para esta tarea
+
+Nuestro problema es como limpiamos las cadenas de texto, las agrupamos y reemplazamos por una sola que las represente para evitar la pluralidad de cadenas de texto.
+
+Lo que se vea con un .str significa que se accede a las funciones especializadas que tiene montado pandas para los strings.
+
+se aplica el algoritmo de Porter para poder reducir a varias palabras a una misma palabra, es decir, algo que se dice de varias maneras reducirlo para que se diga de una sola manera. En este ejemplo se reduce a la raiz de la palabra
+
+se organiza cada token en orden alfabetico y se eliminan duplicados.
+
+se unen las palabras en una frase.
+
+Ahora, como ya tengo la columna de claves...Como hago para reemplazar los que tengan la misma clave por un unico valor?
+con la function generate_cleaned_text
