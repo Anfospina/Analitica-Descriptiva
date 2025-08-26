@@ -1,0 +1,10 @@
+la idea es construir un grafico a partir de precios de electricidad, a partir de la informacion disponible en un repo en internet.
+
+Si se visita el repo, se da cuenta que se tienen diversos archivos csv de acuerdo a cada año y meses, desde 1995 hasta 2021.
+
+1.Generar el nombre los archivos
+El mayor incoveniente con este ejercicio es el preprocesamiento de la data
+
+Es muy importante mejorar la estructura de los datos para poder manipular,
+por tal razón se emplea melt, que configura de acuerdo al gusto de quien programa
+
